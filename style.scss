@@ -1,0 +1,49 @@
+$tblclr: rgba(5, 204, 220, 0.2);
+
+.table thead{
+  background-color: $tblclr;
+  font-size: 16px;
+  color: #ef3d1f;
+}
+
+.my-list{
+  font-family: Georgia,sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  ul{
+    color: #ef3d1f;
+  }
+  ol{
+    color: darkorange;
+  }
+}
+
+
+%alert {
+  width: 90%; /* Configure it fit in your design  */
+  margin: 0 auto; /* Centering Stuff */
+  background-color: #FFFFFF; /* Default background */
+  padding: 20px;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+  border-radius: 3px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+.danger{
+  @extend %alert;
+  border-left-color: #d9534f; /* Left side border color */
+  background-color: rgba(217, 83, 79, 0.1);
+}
+.warning {
+  @extend %alert;
+  border-left-color: #f0ad4e;
+  background-color: rgba(240, 173, 78, 0.1);
+}
+.success {
+  @extend %alert;
+  border-left-color: #2b542c;
+  background-color: rgba(43, 84, 44, 0.1);
+}
